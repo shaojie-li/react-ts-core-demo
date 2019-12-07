@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "baseUrl": "../src",
+        "outDir": "../build/out",
+        "module": "esnext",
+        "target": "es5",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "importHelpers": true,
+        "jsx": "react",
+        "lib": ["dom", "es2017"],
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "noUnusedLocals": true,
+        "downlevelIteration": true,
+        "resolveJsonModule": false
+    },
+    "typeRoots": ["./node_modules/@types"],
+    "include": ["../src/**/*", "../test/**/*", "../typing/**/*"],
+    "lib": ["es2016"]
+}

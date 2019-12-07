@@ -1,0 +1,53 @@
+.main-layout-header {
+    display: flex;
+    height: 64px;
+    line-height: 64px;
+    user-select: none;
+
+    .header-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        color: #666;
+
+        li {
+            display: inline-block;
+
+            & + li {
+                margin-left: 20px;
+            }
+        }
+
+        a {
+            font-size: 20px;
+            color: #333;
+            padding: 0 20px;
+
+            &.active {
+                color: #f90;
+            }
+        }
+
+        .header-right-wrapper {
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+            height: 100%;
+            text-align: right;
+            flex: 1;
+            padding: 0 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #f6f6f6;
+        }
+
+        .menu-collapsed {
+            cursor: pointer;
+        }
+    }
+
+    .logout-button {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "tabWidth": 4,
+    "printWidth": 300,
+    "trailingComma": "es5",
+    "bracketSpacing": true,
+    "overrides": [
+        {
+            "files": ["*.ts", "*.tsx", "*.less", "*.js"],
+            "options": {
+                "tabWidth": 4
+            }
+        }
+    ],
+    "endOfLine": "crlf"
+}

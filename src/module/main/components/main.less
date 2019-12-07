@@ -1,0 +1,56 @@
+@import "../../../assets/styles/index.less";
+
+.main-body {
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+
+    .main-content {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        padding: 0 20px 20px 20px;
+        color: #000;
+        overflow: hidden;
+
+        .module-container {
+            position: relative;
+            flex: 1;
+            padding: 20px;
+            overflow: auto;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    .global_spin {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        z-index: 10;
+    }
+
+    .module-bread-crumb {
+        padding: 10px 0;
+        user-select: none;
+
+        .anticon-rollback {
+            cursor: pointer;
+        }
+    }
+}
+
+.main-layout {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.main-with-side-container {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
